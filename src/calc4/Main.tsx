@@ -33,7 +33,6 @@ const Main = () => {
   const [fontSize, ref] = useFontSizeFromElementRect<HTMLDivElement>();
   useThemeLocalDispatch<ThemeTypes>(state.theme, dispatch, "light");
 
-  console.log("render main");
   return (
     <div className={state.theme} style={style(fontSize)} ref={ref}>
       <Header dispatch={dispatch} />

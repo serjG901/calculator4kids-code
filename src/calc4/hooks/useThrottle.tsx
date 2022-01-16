@@ -1,7 +1,7 @@
 import React from "react";
 
 function useThrottle(f: () => void, delay: number) {
-  const timerId = React.useRef<number | null>(null);
+  const timerId = React.useRef<NodeJS.Timeout | null>(null);
 
   const throttled = () => {
     if (timerId.current === null) {

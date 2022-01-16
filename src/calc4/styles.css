@@ -15,8 +15,6 @@
       format("svg"); /* Legacy iOS */
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-
 .dark {
   --main-color: rgb(20, 20, 20);
   margin: 0;
